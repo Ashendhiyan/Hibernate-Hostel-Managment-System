@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="remainKeyMoney" prefHeight="602.0" prefWidth="978.0" style="-fx-background-color: #dfe6e9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.RemainKeyMoneyFormController">
+   <children>
+      <Pane prefHeight="60.0" prefWidth="978.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="Reservation" layoutX="153.0" layoutY="20.0" text="Find  Remain Key-Money Student">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="49.0" fitWidth="76.0" layoutX="73.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/find.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="28.0" layoutY="84.0" prefHeight="497.0" prefWidth="922.0" style="-fx-background-radius: 30px 30px 30px 30px; -fx-background-color: #57606f;" />
+      <TableView fx:id="tblRemainKeyMoney" layoutX="141.0" layoutY="156.0" prefHeight="366.0" prefWidth="691.0" style="-fx-background-color: white; -fx-border-color: black;">
+         <columns>
+            <TableColumn fx:id="colStudentId" prefWidth="191.0" style="fx-border-colour: red;" text="colStudentId" />
+            <TableColumn fx:id="colStudentName" prefWidth="255.0" text="colStudentName" />
+            <TableColumn fx:id="colStatus" prefWidth="240.0" text="colStatus" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

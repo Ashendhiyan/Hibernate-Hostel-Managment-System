@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Login" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.controller.LoginFormController">
+   <children>
+      <Pane layoutX="178.0" layoutY="77.0" prefHeight="432.0" prefWidth="810.0">
+         <children>
+            <Pane layoutX="-1.0" prefHeight="432.0" prefWidth="405.0" style="-fx-background-color: #54a0ff; -fx-background-radius: 50px 0px 0px 50px;">
+               <children>
+                  <Label layoutX="119.0" layoutY="76.0" text="Welcome Again !">
+                     <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="174.0" text="User Name :">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserName" layoutX="179.0" layoutY="170.0" onKeyReleased="#txtUserId" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: white; -fx-background-radius: 50px 50px 50px 50px;" />
+                  <FontAwesomeIconView glyphName="USER" layoutX="155.0" layoutY="187.0" size="17" />
+                  <Label layoutX="55.0" layoutY="239.0" text="Password   :">
+                     <font>
+                        <Font name="Berlin Sans FB" size="14.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="LOCK" layoutX="155.0" layoutY="252.0" size="17" />
+                  <Button layoutX="140.0" layoutY="355.0" mnemonicParsing="false" onAction="#LoginOnAction" prefHeight="33.0" prefWidth="119.0" style="-fx-background-radius: 50px 50px 50px 50px; -fx-background-color: #B53471;" text="Log in" textFill="WHITE">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <CheckBox fx:id="CheckBoxPassword" layoutX="186.0" layoutY="272.0" mnemonicParsing="false" onMouseClicked="#changeVisibility" text="Show Password" />
+                  <TextField fx:id="txtPasswordHidden" layoutX="179.0" layoutY="226.0" prefHeight="33.0" prefWidth="159.0" style="-fx-background-color: white; -fx-background-radius: 50px 50px 50px 50px;" />
+                  <PasswordField fx:id="txtPassword" layoutX="181.0" layoutY="232.0" onKeyReleased="#txtPassword" prefHeight="17.0" prefWidth="155.0" style="-fx-background-color: white; -fx-background-radius: 50px 50px 50px 50px;" />
+               </children>
+            </Pane>
+            <Pane layoutX="405.0" prefHeight="432.0" prefWidth="405.0" style="-fx-background-color: black; -fx-background-radius: 0px 50px 50px 0px;">
+               <children>
+                  <ImageView fitHeight="307.0" fitWidth="361.0" layoutX="10.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/D24%20logo%20white.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
