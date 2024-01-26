@@ -7,7 +7,9 @@ Colombo campuses. This Hostel gives room facilities for both boys and girls.
 
 
 ## Technicle Stack 
-Java, JavaFX, Hibernate
+* Java
+* JavaFX
+* Hibernate
 
 
 ## Screenshots
