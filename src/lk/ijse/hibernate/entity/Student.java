@@ -26,7 +26,7 @@ public class Student implements SuperEntity {
     private String address;
     @Column(nullable = false)
     private String contact_no;
-    @Column(columnDefinition = "DATE",nullable = false)
+    @Column(nullable = false)
     private LocalDate dob;
 
     @Column(nullable = false)

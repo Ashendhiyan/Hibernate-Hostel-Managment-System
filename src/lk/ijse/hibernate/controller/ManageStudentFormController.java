@@ -170,8 +170,8 @@ public class ManageStudentFormController {
         } else {
             String id = txtId.getText();
             String name = txtName.getText();
-            String telNo = txtTelNo.getText();
             String address = txtAddress.getText();
+            String telNo = txtTelNo.getText();
             LocalDate dob = cmbDOB.getValue();
             String gender = cmbGender.getValue();
 
@@ -182,9 +182,7 @@ public class ManageStudentFormController {
                 refreshTable();
                 tblStudent.refresh();
                 clearFields();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
+            } catch (SQLException | IOException e) {
                 throw new RuntimeException(e);
             }
             if (isAdded) {
@@ -214,9 +212,7 @@ public class ManageStudentFormController {
                 isAdded = studentService.updateStudent(student);
                 refreshTable();
                 clearFields();
-            } catch (SQLException e) {
-                throw new RuntimeException(e);
-            } catch (IOException e) {
+            } catch (SQLException | IOException e) {
                 throw new RuntimeException(e);
             }
             if (isAdded) {
@@ -239,9 +235,7 @@ public class ManageStudentFormController {
             }else {
                 new Alert(Alert.AlertType.ERROR,"Something Went Wrong..!");
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (IOException e) {
+        } catch (SQLException | IOException e) {
             throw new RuntimeException(e);
         }
     }
